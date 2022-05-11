@@ -1,0 +1,15 @@
+def main():
+    print("This function will calculate the yeild of any investment")
+    print()
+    x=(float(input("What is your initial investment?:")))
+    print()
+    y=(float(input("What is your interest rate(as a decimal point)?:")))
+    print()
+    w=(float(input("How many times per year is the interested calculated?:")))
+    print()
+    z=(int(input("How many years are you expecting accrue interest?:")))
+    for i in range(0,z):
+        y=x+(x*y*(1/w))
+        y=round(y,2)
+        print("compound interest is",y*i)
+main()
